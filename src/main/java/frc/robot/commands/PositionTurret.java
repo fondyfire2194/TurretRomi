@@ -17,12 +17,12 @@ public class PositionTurret extends CommandBase {
   private double m_position;
 
   private double kp = .003;
-  private double ki = 0;
+  private double ki = 0.0001;
   private double kd = 0;
   private double startTime;
   private double iZone = 10;
 
-  private PIDController m_controller = new PIDController(kp, 0, 0);
+  private PIDController m_controller = new PIDController(kp, 0.00001, 0);
 
   public PositionTurret(Turret turret, double position) {
     // Use addRequirements() here to declare subsystem dependencies.

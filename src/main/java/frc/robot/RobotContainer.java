@@ -58,6 +58,8 @@ public class RobotContainer {
     SmartDashboard.putData("PositionTurret -90", new PositionTurret(m_turret, -90));
     SmartDashboard.putData("ResetPosition", new ResetPosition(m_turret));
     SmartDashboard.putData(m_turret);
+
+
     // Configure the button bindings
     configureButtonBindings();
   }
@@ -79,7 +81,7 @@ public class RobotContainer {
     // m_chooser.setDefaultOption("Auto Routine Distance", new
     // AutonomousDistance(m_drivetrain));
     // m_chooser.addOption("Auto Routine Time", new AutonomousTime(m_drivetrain));
-    SmartDashboard.putData(m_chooser);
+   // SmartDashboard.putData(m_chooser);
   }
 
   /**

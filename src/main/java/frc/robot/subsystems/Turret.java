@@ -23,7 +23,7 @@ public class Turret extends SubsystemBase {
   public Turret() {
     m_turretEncoder.setDistancePerPulse(k_encoderCountsPerDegree);
     m_turretEncoder.reset();
-    SmartDashboard.putNumber("TurretTarget", 0);
+    
   }
 
   public void turnTurret(double speed) {
@@ -60,7 +60,7 @@ public class Turret extends SubsystemBase {
   public void periodic() {
     // This method will be called once per scheduler run
     SmartDashboard.putNumber("TurretPosition", getTurretPosition());
-    SmartDashboard.putNumber("TurretRae", getTurretRate());
+    SmartDashboard.putNumber("TurretRate", getTurretRate());
     SmartDashboard.putBoolean("TurretCWLimit", onCWLimit());
     SmartDashboard.putBoolean("TurretCCWLimit", onCCWLimit());
 
